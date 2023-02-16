@@ -1,1 +1,1 @@
-# mental-health-helper
+# Helping Hand
