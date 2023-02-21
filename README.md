@@ -5,7 +5,7 @@ Tasnhuba Islam
 Amrita Dhar  
 Farzana Israt  
 Joe Rossi  
-Taraque  
+Taraque Ahmed
 
 ## Technology Stack
 * HTML  
