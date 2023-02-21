@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="" method="POST">
+<h1>What are you thinking about today?</h1>
+<p>When you get into this page, the 5 minutes will start automatically, and the page will alert "Done".</p>
+
+<label for="diary"></label> <br>
+            <textarea name="instructions" id="diary" rows="15" cols="100" maxlength="1500" placeholder="Start typing..."></textarea>
+
+    <p><input type="submit" value="Done"><input type="reset"></p>
+
+    
+<script>
+const myTimeout = setTimeout(myFunction, 3000);
+
+function myFunction() {
+  alert('Done');
+}
+
+</script>
+</form>
+</body>
+</html>
+
