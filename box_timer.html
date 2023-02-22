@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
 <body>
+<style>
+body {
+  background-color: lightgreen;
+}
 
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
 <form action="" method="POST">
 <h1>What are you thinking about today?</h1>
-<p>When you get into this page, the 5 minutes will start automatically, and the page will alert "Done".</p>
+<p>Click "Start". Wait 5 minutes, and the page will alert "Done".</p>
+
+<button type="button" onclick="setTimeout(myFunction, 300000);">Start it</button>
 
 <label for="diary"></label> <br>
             <textarea name="instructions" id="diary" rows="15" cols="100" maxlength="1500" placeholder="Start typing..."></textarea>
-
-    <p><input type="submit" value="Done"><input type="reset"></p>
-
-    
+    <input type="submit" value="Done"><input type="reset">
+   
 <script>
-const myTimeout = setTimeout(myFunction, 300000);
-
 function myFunction() {
   alert('Done');
 }
