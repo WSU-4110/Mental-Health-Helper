@@ -3,5 +3,76 @@ h1 {
 }
 
 body {
-    background-color:lightblue;
+    background-color:#b5e2c3;
+    font-family: Georgia, serif;
+}
+
+header {
+    margin: 2em .5em 10em .5em;
+}
+header h1 {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: left;
+    font-size: 3em;
+    color: white;
+}
+
+nav ul {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+nav ul li a {
+    display: inline;
+    border: 4px solid;
+    padding: .5em 1em;
+    margin: .5em;
+}
+
+footer {
+    color: #b5e2c3;
+    background-color: #596E73;
+    text-align: left;
+    font-size: 1.2em;
+    padding: .5em;
+    bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:focus, a:hover {
+    color: #b5e2c3;
+    background-color: white;
+}
+a:active {
+    color: white;
+}
+
+nav ul {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+nav ul li a {
+    display: inline;
+    border: 4px solid;
+    padding: .5em 1em;
+    margin: .5em;
 }
