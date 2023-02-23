@@ -2,7 +2,8 @@
 
 body {
     background-color: #b5e2c3;
-    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-family: Georgia, serif;
+
 }
 
 header {
@@ -53,6 +54,8 @@ h2:hover {
 
 h3 {
     text-align: center;
+    font-size: 1.5em;
+
 }
 
 .aboutus p {
@@ -64,7 +67,8 @@ h3 {
     border-style: solid;
     border-radius: 1em;
     border-color: #596E73;
-    border-width: .5em;
+    border-width: 2em;
+
 }
 
 a {
