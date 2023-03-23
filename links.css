@@ -31,7 +31,7 @@ nav ul {
     justify-content: right;
 }
 nav ul li a {
-    display: inline;
+    display: flex;
     border: 3px solid;
     padding: .5em;
     margin: .5em;
@@ -95,13 +95,15 @@ a:visited {
     color:rgb(141, 63, 63)
 }
 section {
-    align-content: center;
     background: rgb(232, 255, 212);
     margin: 10px;
     padding: 20px;
     border: 1px dotted rgba(240, 247, 218, 0.829);
     display: flex;
+    align-content: center;
+    justify-content: center;
     flex-direction: column;
+    flex-grow: 1;
     
     }
     .articles {   
@@ -133,6 +135,13 @@ section {
     -ms-animation: fadeIn 5s;
     }
     .doctors {
+        animation: fadeIn 6s;
+    -webkit-animation: fadeIn 6s;
+    -moz-animation: fadeIn 6s;
+    -o-animation: fadeIn 6s;
+    -ms-animation: fadeIn 6s;
+    }
+    .websearch {
         animation: fadeIn 6s;
     -webkit-animation: fadeIn 6s;
     -moz-animation: fadeIn 6s;
@@ -195,4 +204,41 @@ section {
     background-color: #8eb59b; 
     text-align: left;
 }
- 
+
+
+input[id=searchInput] {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    border-color: rgba(180, 224, 159, 0.89);
+    padding: 10px 20px;
+    margin: 5px;
+    
+}
+
+.container {
+    width: 100%;
+    /*min-height: 20vh;*/
+    /*padding: 5%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    /*background: rgba(255, 255, 255, 0.2);*/
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    /*border-color: rgba(180, 224, 159, 0.89);*/
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+
