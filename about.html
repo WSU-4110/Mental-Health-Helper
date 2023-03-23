@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+</head>
+
+<style>
+    @import url(styleabout.css);
+</style>
+
+<body>
+    <header>
+        <img src="logo.png" width="150" height="120"><h1>Helping Hand</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MoodQuiz.html">Mental Help Quiz</a></li>
+                <li><a href="helpful links.html">Resources</a></li>
+                <li><a href="box_timer.html">Journal</a></li>
+                <li><a href="about.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+<div class = "aboutus">
+    <div class = "mission">
+    <h2>Our Mission</h2>
+        <p>Mental Health challenges is a problem a majority of the world's population faces. However, society stills struggles to put more emphasis on taking care of
+            one's mental health, when it is just as important as physical health. Due to the lack of resources that may be available for people to monitor their mental 
+            health, it can be hard to find solutions when facing such problems.
+            <br><br>
+            That's why we wanted to create a safe space for those in need of proper help and attention. Our website aims to provide various resources and awareness to
+            assist people in understanding and coping with mental challenges. We aim to help everyone, no matter their identity, because mental health isn't limited to 
+            any certain person.
+        </p>
+        <br>
+    </div>
+
+<br><br>
+
+<h2>Who We Are</h2>
+<p>We are a group of Computer Science students at Wayne State University. Read more about us!</p>
+
+<h3>Tasnhuba Islam</h3>
+<p>Heyy! I’m a junior here at wayne state university. I enjoy creating things and seeing the results. Outside of tech, I love hanging out with family and friends. 
+    I am recently getting back into reading. </p>
+<h3>Amrita Dhar</h3>
+<p>Hello! I am a junior at Wayne State. I don't have a lot of experience with coding besides the courses I have taken at my university. I enjoy web development, 
+    but I am also interested in software development. Besides coding, I usually like binging tv shows or movies. I also like going out to eat and trying different foods, 
+    but my wallet usually isn't a big fan of that.
+</p>
+<h3>Farzana Israt</h3>
+<p>Hello! I am Farzana Israt and I am a junior studying Computer Science at Wayne State University! I currently am looking to become a software engineer or go down a 
+    similar route in terms of my career. My hobbies include reading, writing, and creating cool projects. I wish to travel more and visit the spots I’m interested in 
+    when I am older and more financially stable.</p>
+<h3>Joseph Rossi</h3>
+<p>Hi! I am a junior studying Computer Science at Wayne State University. My hobbies currently include playing video games, attending sport games and playing cards.
+    I also enjoy to travel and visit new places! My goal in the future is to get a job as a validation test engineer after I graduate.</p>
+<h3>Taraque Ahmed</h3>
+<p>Hi! My name is Taraque Ahmed, and I am majoring in computer science at Wayne State University. 
+    This is my senior year and I have one more semester left at Wayne State University. The things I like about being a software engineer must always learn new things. 
+    Every other day, a new advancement in this subject occurs due to the ongoing evolution of technology. As a result, one of the benefits of becoming a software engineer 
+    is having the opportunity to pick up new skills at any moment. My hobbies are spending time with family, friends, travel, football, basketball, soccer, and hockey.</p>
+
+</div>
+
+<br><br>
+
+<h2>Contact Us</h2>
+<p class="contactgreeting">We are open to answering questions anyone may have regarding our mission, features, or our overall website.</p>
+
+<form name="contactform" action="contactform.php" method="POST">
+    <fieldset>
+        <legend>Contact Us</legend>
+        <ul>
+            <li><label for="first-name">First Name</label>
+                <input type="text" name="firstname" id="first-name" placeholder="Enter your first name">
+            </li>
+
+            <li><label for="last-name">Last Name</label>
+                <input type="text" name="lastname" id="last-name" placeholder="Enter your last name">
+            </li>
+
+            <p>Choose your age range:
+                <select name="ages" size="1">
+                    <option>17 & Under</option>
+                    <option>18-25</option>
+                    <option>26-30</option>
+                    <option>31-50</option>
+                    <option>Above 50</option>
+                </select>
+            </p>
+
+
+            <li><label for="form-email">Email</label>
+                <input type="email" name="useremail" id="form-email" placeholder="Enter your email">
+            </li>
+
+            <li><label for="form-num">Telephone Number</label>
+                <input type="tel" name="usernumber" id="form-num" placeholder="Enter your phone">
+            </li>
+
+            <li><label for="form-comment">Feedback or Question</label> <br>
+                <textarea name="feedback" id="form-comment" rows="8" cols="60" maxlength="800"
+                    placeholder="Type your feedback or question here"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+
+    <p><input type="submit" value="Submit" ><input type="reset"></p>
+
+</form>
+
+<br>
+
+<footer>
+
+    <p><small>All content copyright &copy; 2023, HelpingHand</small></p>
+
+</footer>
+
+</body>
+</html>

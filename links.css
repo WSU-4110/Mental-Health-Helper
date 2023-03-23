@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.logo {
+    position: fixed;
+    left:0;
+    top:0;
+    
+}
+body {
+    padding-top: 1em;
+    background-color: #b5e2c3;
+    font-family: Georgia, serif;
+}
+header {
+    
+    margin: 0em .5em 4em .5em;
+}
+
+
+nav ul {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+nav ul li a {
+    display: flex;
+    border: 3px solid;
+    padding: .5em;
+    margin: .5em;
+    text-decoration: none;
+}
+
+nav ul li a:link {
+    color: white;
+}
+
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:focus, nav ul li a:hover {
+    color: #b5e2c3;
+    background-color: white;
+}
+
+
+footer {
+    color: #b5e2c3;
+    background-color: #596E73;
+    text-align: left;
+    font-size: 1.2em;
+    padding: .5em;
+    bottom: 0px;
+}
+
+ul {
+    padding: 0;
+}
+
+h1 {
+    top:0;
+    left:0;
+    width: 100%;
+    position: center;
+    margin: 10px; 
+    font-size: 2em;
+    text-align: center;
+    color:white;
+}
+h2 {
+    text-align: center;
+    color: #9ea27c;
+}
+li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 18px;
+}
+
+a:link {
+    color:rgb(90, 139, 69)
+}
+a:hover {
+    color:rgb(20, 50, 8);
+}
+a:visited {
+    color:rgb(141, 63, 63)
+}
+section {
+    background: rgb(232, 255, 212);
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted rgba(240, 247, 218, 0.829);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    }
+    .articles {   
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+    }
+    .exercises {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+    }
+    .activities {
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    -o-animation: fadeIn 4s;
+    -ms-animation: fadeIn 4s;
+    }
+    .helplines {
+     animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    }
+    .doctors {
+        animation: fadeIn 6s;
+    -webkit-animation: fadeIn 6s;
+    -moz-animation: fadeIn 6s;
+    -o-animation: fadeIn 6s;
+    -ms-animation: fadeIn 6s;
+    }
+    .websearch {
+        animation: fadeIn 6s;
+    -webkit-animation: fadeIn 6s;
+    -moz-animation: fadeIn 6s;
+    -o-animation: fadeIn 6s;
+    -ms-animation: fadeIn 6s;
+    }
+
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    
+#helpful_links {
+    border: 3px solid rgba(240, 247, 218, 0.829);
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.collapsible {
+    background-color: #b5e2c3;
+    color:black;
+    cursor: pointer;
+    padding: 18px;
+    border-color:#b5e2c3;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+.active, .collapsible:hover {
+    background-color: #defcb3;
+}
+
+.content {
+    padding: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #8eb59b; 
+    text-align: left;
+}
+
+
+input[id=searchInput] {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    border-color: rgba(180, 224, 159, 0.89);
+    padding: 10px 20px;
+    margin: 5px;
+    
+}
+
+.container {
+    width: 100%;
+    /*min-height: 20vh;*/
+    /*padding: 5%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    /*background: rgba(255, 255, 255, 0.2);*/
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    /*border-color: rgba(180, 224, 159, 0.89);*/
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+
