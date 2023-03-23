@@ -1,98 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
 <head>
-    <h1>Mood Quiz</h1>
-    <title>Mood Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mood Quiz</title>
+	
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/MoodQuiz2.0_CSS.css">
 </head>
 
-<style>
-    @import url(MoodQuizStyle.css);
-</style>
-
 <body>
-    <header>
-        <img src="logo.png" width="150" height="120"><h1>Helping Hand</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="MoodQuiz.html">Mental Help Quiz</a></li>
-                <li><a href="helpful links.html">Resources</a></li>
-                <li><a href="box_timer.html">Journal</a></li>
-                <li><a href="about.html">About Us</a></li>
 
-            </ul>
-        </nav>
-    </header>
-    
-    <form action ="MoodQuiz.html" name ="MoodQuiz" method="POST">
+	<div class="container text-center">
+		<h1>Mood Quiz</h1>
+	</div>
+	<div class="container text-center">
+		<ul id="quiz" class="list-group">
 
-        1.How often have you been bothered by feeling down, hopeless, depressed:<br>
-        <input type="radio" name="depressed" value="Not at all">Not at all<br>
-        <input type="radio" name="depressed" value="Several days">Several Days<br>
-        <input type="radio" name="depressed" value="More than half the days">More than half the days<br>
-        <input type="radio" name="depressed" value="Nealry every day">Nearly every day<br>
-        
-        <br>
-
-        2.Have you had trouble falling asleep or sleeping too much:<br>
-        <input type="radio" name="sleep" value="Not at all">Not at all<br>
-        <input type="radio" name="sleep" value="Several days">Several Days<br>
-        <input type="radio" name="sleep" value="More than half the days">More than half the days<br>
-        <input type="radio" name="sleep" value="Nealry every day">Nearly every day<br>
-
-        <br>
-
-        3.How Often do you have little interest or pleasure in doing things:<br>
-        <input type="radio" name="interest" value="Not at all">Not at all<br>
-        <input type="radio" name="interest" value="Several days">Several Days<br>
-        <input type="radio" name="interest" value="More than half the days">More than half the days<br>
-        <input type="radio" name="interest" value="Nearly every day">Nearly every day<br>
-
-        <br>
-
-        4.How often have you been bothered by feeling tired or having little energy:<br>
-        <input type="radio" name="tired" value="Not at all">Not at all<br>
-        <input type="radio" name="tired" value="Several days">Several Days<br>
-        <input type="radio" name="tired" value="More than half the days">More than half the days<br>
-        <input type="radio" name="tired" value="Nealry every day">Nearly every day<br>
-
-        <br>
-
-        5.How often have you been bothered by poor appetite or overeating:<br>
-        <input type="radio" name="appetite" value="Not at all">Not at all<br>
-        <input type="radio" name="appetite" value="Several days">Several Days<br>
-        <input type="radio" name="appetite" value="More than half the days">More than half the days<br>
-        <input type="radio" name="appetite" value="Nealry every day">Nearly every day<br>
-
-        <br>
-
-        6.What is your overall mood on a scale from 1-5(5 being the best):<br>
-        <input type="radio" name="mood" value="1">1<br>
-        <input type="radio" name="mood" value="2">2<br>
-        <input type="radio" name="mood" value="3">3<br>
-        <input type="radio" name="mood" value="4">4<br>
-        <input type="radio" name="mood" value="5">5<br>
+		</ul>
+	</div>
 
 
-        <br>
+	<div class="container text-center results hide">
+		<p id="results"></p>
+	</div>
 
-        <br>
+	<div class="container text-center bottom">
+		<button id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
 
-        <input type = "submit" value = "Submit"><input type = "reset">
+		<button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
+	</div>
+	
 
-    </form>
-
-    <br><br>
-
-    <footer>
-
-        <p><small>All content copyright &copy; 2023, HelpingHand</small></p>
-    
-    </footer>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script src="MoodQuiz2.0_Javascript.js"></script>
 </body>
-
-
 </html>
