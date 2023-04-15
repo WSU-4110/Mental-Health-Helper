@@ -1,17 +1,17 @@
 var prompts = [
     {
         prompt: 'I am often bothered by feeling down, depressed or hopeless',
-        weight: 1,
+        weight: 5,
         class: 'group1'
     },
     {
-        prompt: 'I have trouble falling asleep or oversleeping',
-        weight: 1,
+        prompt: 'I find myself having difficulty controlling my worry and performing necessary tasks at work, home, or school?',
+        weight: -5,
         class: 'group2'
     },
     {
-        prompt: 'I often have been bothered by feeling tired or having little energy',
-        weight: 1,
+        prompt: 'I noticed lately that I have been jittery, on edge?',
+        weight: -3,
         class: 'group3'
     },
     {
@@ -20,18 +20,18 @@ var prompts = [
         class: 'group4'
     },
     {
-        prompt: 'I often have little interest or pleasure in doing things',
-        weight: 1,
+        prompt: 'I usually worry about simple things that I shouldnt worry about',
+        weight: -5,
         class: 'group5'
     },
     {
         prompt: 'I am usually highly motivated and energetic',
-        weight: -1,
+        weight: -5,
         class: 'group6'
     },
     {
-        prompt: 'I find it easy to walk up to a group of people and join in the conversation',
-        weight: -1,
+        prompt: 'I avoid situations such as being alone or in crowded situations, driving or riding in a car or public transportation, or going to movie theaters',
+        weight: -5,
         class:'group7'
     }
 
@@ -93,7 +93,7 @@ var prompts = [
                 var button = document.createElement('button');
                 var button_text = document.createTextNode(prompt_values[i].value);
                 button.className = 'group' + li_index + ' value-btn btn ' + prompt_values[i].class;
-                button.appendChild(button_text);
+                button.appendChild(button_text);  
     
                 btn_group.appendChild(button);
                 group.appendChild(btn_group);
@@ -174,19 +174,22 @@ var prompts = [
             document.getElementById('results').innerHTML = '<b>You could be depressed</b><br><br>\
             You might be feeling depressed, that is why you are unhappy. To overcome this, you can look out for the symptoms of depression and consult a therapist accordingly.\n\
     <br><br>\
-    Use our Helpful Links page for additional help\n\
+    Use our Resources page for additional help\n\
     <br><br>\
-    We also have links and numbers to different doctors you can contact\n\n\
+    We also have links and numbers to different doctors you can contact.\n\n\
     <br><br>\
-    Never be afraid to get help.\
-            ';
+    Never be afraid to get help.';
+
         } else if(total < 0) {
-            document.getElementById('results').innerHTML = '<b>You are feeling good today!</b><br><br>\
-            Today is a good day!!\
+            document.getElementById('results').innerHTML = '<b>You could be feeling anxious.</b><br><br>\
+            This is very common for people to deal with so you are not alone. Talk to someone you trust and try breathing excercises.\
     <br><br>\
-   Go do something fun today.\
+   Use the Resources page for more ways to help you overcome this!\
     <br><br>\
-    Keep that smile!';
+    You got this!'
+    const img = new Image(300, 200); 
+  img.src = "Anxiety.jpg";
+  document.body.appendChild(img);; 
         } else {
             document.getElementById('results').innerHTML = '<b>You could just be feeling down today</b><br><br>\
            It is ok to have these feelings some days.\
