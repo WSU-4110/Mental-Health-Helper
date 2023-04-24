@@ -17,3 +17,9 @@ button.addEventListener('click', function() {
     output.innerHTML = randomQuotes;
 
 })
+
+button.removeEventListener('click', function() {
+  var randomQuotes = hello[Math.floor(Math.random() * hello.length)]
+  output.innerHTML = randomQuotes;
+
+})
