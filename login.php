@@ -65,6 +65,5 @@
     <div class="return" style="justify-content: center;">
         <a href="index.php">Return Home</a>
     </div>
-
 </body>
 </html>
