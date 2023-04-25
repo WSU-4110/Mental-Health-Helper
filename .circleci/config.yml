@@ -1,1 +1,22 @@
+version: 2.1
+executors:
+  jasmine_executor:
+    docker:
+      - image: circleci/node:14.17
+
+jobs:
+  build:
+    executor: jasmine_executor
+    steps:
+      - checkout
+
+      # Install dependencies
+      - run:
+          name: Install dependencies
+          command: npm ci
+
+      # Run Jasmine tests
+      - run:
+          name: Run Jasmine tests
+          command: npm test
 
