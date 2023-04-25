@@ -13,7 +13,6 @@ jobs:
       # Install dependencies
       - run:
           name: Install dependencies
-          command: npm install
           command: npm ci
 
       # Run Jasmine tests
