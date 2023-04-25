@@ -1,3 +1,4 @@
+
 h1 {
     top:0;
     left:0;
@@ -287,6 +288,16 @@ a:active {
 
 .btn-primary {
     background: pink;
+
+* {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+.prompt {
+	display: block;
+	font-size: 20px;
+
 }
 
 .btn {
@@ -365,4 +376,3 @@ a:active {
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
-
